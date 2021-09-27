@@ -1,0 +1,22 @@
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0 0 1.25rem;
+  margin: 0.75rem 0 1.5rem;
+}
+
+.label {
+  flex: 0 1 auto;
+  background-color: var(--label-background);
+  color: var(--label);
+  border: none;
+  border-radius: 100px;
+  font-size: 0.75rem;
+  line-height: 1.6667;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.1875rem 0.625rem;
+}

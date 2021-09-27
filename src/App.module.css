@@ -1,0 +1,12 @@
+
+.container {
+  width: 100%;
+  max-width: 704px;
+  padding: 1.25rem;
+}
+
+.modal {
+  background-color: #fff;
+  padding: 2.5em;
+  margin: 2.5em 0 0;
+}

@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import styles from './App.module.css';
+import OrderData from './data/orderData.json';
+import OrderHeader from './components/OrderHeader';
+import OrderTable from './components/OrderTable';
+import ShippingInformation from './components/ShippingInformation';
+import OrderLabels from './components/OrderLabels';
+import OrderButtons from './components/OrderButtons';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.container}>
+      <OrderHeader orderNumber={OrderData.orderNumber} createdDate={OrderData.createdDate} modifiedDate={OrderData.modifiedDate} />
+      <div className={styles.modal}>
+        <OrderTable products={OrderData.products} totalPrice={OrderData.totalPrice} />
+        <ShippingInformation shippingData={OrderData.shippingInformation} />
+        <OrderLabels labels={OrderData.orderInformation} />
+        <OrderButtons actions={OrderData.actions} />
+      </div>
     </div>
   );
 }

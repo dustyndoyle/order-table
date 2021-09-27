@@ -1,0 +1,29 @@
+
+.header {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.orderNumber {
+  font-size: 1.125rem;
+  line-height: 1.55556;
+}
+
+.orderDates {
+  font-size: 0.875rem;
+  line-height: 1.5715;
+}
+
+.date {
+  display: block;
+}
+
+@media (min-width: 480px) {
+  .header {
+    display: flex;
+  }
+
+  .orderDates {
+    text-align: right;
+  }
+}
