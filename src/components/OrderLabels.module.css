@@ -1,4 +1,4 @@
-
+/* Use Flex to display and automatically wrap for mobile */
 .container {
   display: flex;
   flex-wrap: wrap;

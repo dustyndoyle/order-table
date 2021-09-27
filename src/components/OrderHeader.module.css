@@ -1,4 +1,4 @@
-
+/* Remove flex at mobile breakpoints and use default block styling for element */
 .header {
   align-items: center;
   justify-content: space-between;
@@ -19,6 +19,7 @@
 }
 
 @media (min-width: 480px) {
+  /* Use Flex to set header display with space between at larger breakpoints */
   .header {
     display: flex;
   }

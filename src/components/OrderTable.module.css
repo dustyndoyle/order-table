@@ -1,4 +1,4 @@
-
+/* Use default block level display for rows / columns on mobile to display each column in their own row */
 .row {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0.625rem 0.3125rem 0.5rem;
@@ -10,6 +10,7 @@
   margin: 0.3125rem 0 0;
 }
 
+/* On mobile, display column names before each column to be more user friendly on mobile devices */
 .column::before {
   content: attr(data-name) ": ";
   font-weight: 700;
@@ -28,6 +29,7 @@
   text-align: left;
 }
 
+/* Header and Footer rows have more specific styling than product rows */
 .headerRow {
   display: none;
   border-bottom: none;
@@ -65,6 +67,7 @@
 }
 
 @media (min-width: 480px) {
+  /* Use Grid for larger table display to customize table column sizes and allow for table to scale nicely */
   .row {
     display: grid;
     grid-template-columns: 15.6% 1fr 1fr 1fr;
